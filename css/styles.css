@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
-  color: #2e2f42;
+  color: #434455;
   background-color: #fff;
 }
 
@@ -59,7 +59,7 @@ button {
 
 .address-link:hover,
 .address-link:focus {
-  background-color: #404bbf;
+  color: #404bbf;
 }
 /* #endregion header */
 
@@ -86,7 +86,8 @@ button {
   text-align: center;
 }
 
-.hero-btn:hover {
+.hero-btn:hover,
+.hero-btn:focus {
   background-color: #404bbf;
 }
 
@@ -156,9 +157,10 @@ button {
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  text-transform: capitalize;
 }
 .portfolio-list {
 }
