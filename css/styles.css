@@ -11,7 +11,6 @@ ol {
 
 a {
   text-decoration: none;
-  font-style: normal;
 }
 
 button {
@@ -23,15 +22,15 @@ button {
 
 .logo {
   font-family: "Raleway", sans-serif;
-  color: #2e2f42;
+  color: #4d5ae5;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .logo-span {
-  color: #4d5ae5;
+  color: #2e2f42;
 }
 .menu-link {
   color: #2e2f42;
@@ -45,6 +44,10 @@ button {
 .menu-link:focus {
   color: #404bbf;
 }
+
+.address {
+  font-style: normal;
+}
 .address-link {
   font-weight: 400;
   font-size: 16px;
@@ -56,22 +59,20 @@ button {
 
 .address-link:hover,
 .address-link:focus {
-  color: #404bbf;
+  background-color: #404bbf;
 }
 /* #endregion header */
 
 /* #region hero */
 .hero {
   background-color: #2e2f42;
-  /* width: 1440px;
-  height: 600px; */
 }
 
 .hero-title {
   color: #ffffff;
   font-size: 56px;
   text-align: center;
-  line-height: 1.07143;
+  line-height: 1.07;
   letter-spacing: 0.02em;
 }
 
@@ -80,11 +81,9 @@ button {
   color: #ffffff;
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   text-align: center;
-  /* width: 169px;
-  height: 56px;
-  border-radius: 4px;
-  padding: 16px 32px; */
 }
 
 .hero-btn:hover {
@@ -123,9 +122,10 @@ button {
 .team-header {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  text-transform: capitalize;
 }
 .team-list {
 }
@@ -185,12 +185,14 @@ button {
   background-color: #2e2f42;
 }
 
-.footer .logo {
+.logo {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.16667;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+.footer-logo-span {
   color: #f4f4fd;
 }
 
@@ -200,4 +202,5 @@ button {
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
+
 /*#endreegion footer*/
