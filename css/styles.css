@@ -1,3 +1,4 @@
+/* #region base*/
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -7,10 +8,28 @@ body {
 ul,
 ol {
   list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h55,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
 }
 
 button {
@@ -18,7 +37,50 @@ button {
   font-family: inherit;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+/* #endregion header */
+
 /* #region header */
+header {
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav {
+  display: flex;
+  gap: 75px;
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -31,6 +93,11 @@ button {
 }
 .logo-span {
   color: #2e2f42;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
 }
 .menu-link {
   color: #2e2f42;
@@ -48,13 +115,20 @@ button {
 .address {
   font-style: normal;
 }
+
+.address-list {
+  display: flex;
+  gap: 40px;
+}
 .address-link {
   font-weight: 400;
   font-size: 16px;
-
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .address-link:hover,
@@ -68,15 +142,23 @@ button {
   background-color: #2e2f42;
 }
 
+.header-container {
+}
+
 .hero-title {
+  max-width: 496px;
   color: #ffffff;
   font-size: 56px;
   text-align: center;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  padding-top: 188px;
+  margin-bottom: 48px;
+  margin: auto;
 }
 
 .hero-btn {
+  /* display: block; */
   background-color: #4d5ae5;
   color: #ffffff;
   font-weight: 500;
@@ -84,6 +166,13 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 188px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-btn:hover,
@@ -95,13 +184,20 @@ button {
 
 /* #region advanteges */
 .advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .advanteges-title {
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .advanteges-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
 }
 .advanteges-list-item {
+  width: 280px;
 }
 .feature {
   color: #2e2f42;
@@ -121,6 +217,8 @@ button {
 /* #region Team */
 .team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .team-header {
   color: #2e2f42;
@@ -130,9 +228,12 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
+  margin-bottom: 70px;
 }
 .team-list {
   background-color: #ffffff;
+  display: flex;
+  gap: 24px;
 }
 .team-list-item {
   background-color: #ffffff;
@@ -159,6 +260,8 @@ button {
 
 /*#region portfolio */
 .portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .portfolio-title {
   color: #2e2f42;
@@ -168,8 +271,14 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
+  margin-bottom: 70px;
 }
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  row-gap: 48px;
+  column-gap: 24px;
 }
 .portfolio-list-item {
 }
@@ -190,9 +299,11 @@ button {
 }
 /*#endregion portfolio */
 
-/* #reegion footer */
+/* #region footer */
 .footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .logo {
@@ -207,10 +318,11 @@ button {
 }
 
 .footer-txt {
+  width: 264px;
   color: #f4f4fd;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
-/*#endreegion footer*/
+/* #endregion footer*/
