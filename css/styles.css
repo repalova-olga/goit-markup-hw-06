@@ -51,14 +51,6 @@ button {
   overflow: hidden;
 }
 
-.container {
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -93,6 +85,7 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
+  padding: 24px 0;
 }
 .logo-span {
   color: #2e2f42;
@@ -195,6 +188,14 @@ header {
   color: #2e2f42;
   margin-bottom: 8px;
 }
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .advanteges-list {
   display: flex;
   gap: 24px;
@@ -285,8 +286,9 @@ header {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-  margin-bottom: 70px;
+  margin-bottom: 72px;
 }
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -298,12 +300,19 @@ header {
 }
 .portfolio-img {
 }
+.portfolio-card {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
 .portfolio-subtitle {
   color: #2e2f42;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .portfolio-txt {
   color: #434455;
