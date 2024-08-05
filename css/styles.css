@@ -67,6 +67,7 @@ button {
 
 /* #region header */
 header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
@@ -80,6 +81,7 @@ header {
 .nav {
   display: flex;
   gap: 75px;
+  align-items: center;
 }
 
 .logo {
@@ -90,6 +92,7 @@ header {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .logo-span {
   color: #2e2f42;
@@ -98,6 +101,7 @@ header {
 .menu {
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 .menu-link {
   color: #2e2f42;
@@ -139,6 +143,7 @@ header {
 
 /* #region hero */
 .hero {
+  padding: 188px 0;
   background-color: #2e2f42;
 }
 
@@ -152,13 +157,12 @@ header {
   text-align: center;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  padding-top: 188px;
   margin-bottom: 48px;
   margin: auto;
 }
 
 .hero-btn {
-  /* display: block; */
+  display: block;
   background-color: #4d5ae5;
   color: #ffffff;
   font-weight: 500;
@@ -205,6 +209,7 @@ header {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .feature-txt {
   font-size: 16px;
@@ -228,7 +233,7 @@ header {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-  margin-bottom: 70px;
+  margin-bottom: 72px;
 }
 .team-list {
   background-color: #ffffff;
@@ -238,6 +243,14 @@ header {
 .team-list-item {
   background-color: #ffffff;
 }
+.team-list-item:first-child {
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card {
+  padding: 32px 0;
+}
+
 .photo {
 }
 .name {
@@ -247,6 +260,7 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
 }
 .position {
   font-size: 16px;
@@ -312,6 +326,8 @@ header {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-logo-span {
   color: #f4f4fd;
