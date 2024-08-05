@@ -85,7 +85,6 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
-  padding: 24px 0;
 }
 .logo-span {
   color: #2e2f42;
@@ -102,6 +101,7 @@ header {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
 .menu-link:hover,
