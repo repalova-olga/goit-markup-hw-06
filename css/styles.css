@@ -58,7 +58,7 @@ button {
 /* #endregion header */
 
 /* #region header */
-header {
+.header {
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -184,10 +184,10 @@ header {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.advanteges-title {
+/* .advanteges-title {
   color: #2e2f42;
   margin-bottom: 8px;
-}
+} */
 
 .container {
   width: 1158px;
