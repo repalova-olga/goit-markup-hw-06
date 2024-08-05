@@ -58,9 +58,7 @@ button {
 /* #endregion header */
 
 /* #region header */
-/* header {
-  border-bottom: 1px solid #e7e9fc;
-} */
+
 .myheader {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -186,10 +184,6 @@ button {
 .advantages {
   padding-top: 120px;
   padding-bottom: 120px;
-}
-.visually-hidden {
-  color: #2e2f42;
-  margin-bottom: 8px;
 }
 
 .container {
