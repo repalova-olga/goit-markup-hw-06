@@ -184,10 +184,10 @@ button {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-/* .advanteges-title {
+.visually-hidden {
   color: #2e2f42;
   margin-bottom: 8px;
-} */
+}
 
 .container {
   width: 1158px;
