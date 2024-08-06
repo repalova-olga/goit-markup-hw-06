@@ -332,6 +332,11 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
+}
 .footer-logo-span {
   color: #f4f4fd;
 }
