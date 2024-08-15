@@ -96,6 +96,10 @@ button {
   gap: 40px;
   padding: 24px 0;
 }
+.menu-item {
+  position: relative;
+}
+
 .menu-link {
   color: #2e2f42;
   font-size: 16px;
@@ -108,6 +112,18 @@ button {
 .menu-link:hover,
 .menu-link:focus {
   color: #404bbf;
+}
+
+#studio:active::after {
+  color: #404bbf;
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: 0;
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
 }
 
 .address {
@@ -136,12 +152,23 @@ button {
 /* #endregion header */
 
 /* #region hero */
+
 .hero {
-  padding: 188px 0;
   background-color: #2e2f42;
 }
 
-.header-container {
+.hero-container {
+  width: 1440px;
+  height: 600px;
+  padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people_office.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-title {
@@ -171,6 +198,7 @@ button {
   border: none;
   margin-left: auto;
   margin-right: auto;
+  transform: background-color 300ms liner;
 }
 
 .hero-btn:hover,
@@ -201,6 +229,23 @@ button {
 .advanteges-list-item {
   width: 280px;
 }
+
+.advanteges-item-border {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  background: #f4f4fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advanteges-item-icon {
+  fill: #2e2f42;
+}
+
 .feature {
   color: #2e2f42;
   font-weight: 500;
@@ -238,7 +283,10 @@ button {
   gap: 24px;
 }
 .team-list-item {
+  border-radius: 0 0 4px 4px;
   background-color: #ffffff;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .team-list-item:first-child {
   border-radius: 0px 0px 4px 4px;
@@ -265,6 +313,31 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  margin-bottom: 8px;
+}
+
+.sotial-lincs-icons-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.team-icons-border {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-icons-border:hover {
+  background-color: #404bbf;
 }
 
 /* #endregion Team */
@@ -294,8 +367,37 @@ button {
 }
 .portfolio-list-item {
 }
+.portfolio-list-item:hover .portfolio-img-cover-txt {
+  transform: translate(0);
+}
+
+.portfolio-img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
 .portfolio-img {
 }
+
+.portfolio-img-cover-txt {
+  position: absolute;
+  background-color: #4d5ae5;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 32px;
+  padding-top: 40px;
+  padding-right: 32px;
+  padding-bottom: 164px;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
+}
+
 .portfolio-card {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -325,6 +427,28 @@ button {
   padding-bottom: 100px;
 }
 
+.footer-container {
+  display: flex;
+  align-content: center;
+
+  height: 312px;
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer.address-item {
+  display: flex;
+}
+
+.footer-logo-section {
+  width: 264px;
+  margin-right: 120px;
+  margin-top: 100px;
+}
+
 .logo {
   font-weight: 700;
   font-size: 18px;
@@ -347,6 +471,46 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.footer-sotial-lincks-section {
+  width: 208px;
+  margin-top: 100px;
+}
+
+.footer-icons-border {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icons-border:hover {
+  background-color: #31d0aa;
+}
+
+.footer-sl-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer-sotial-lincs-icons-block {
+  width: 208px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding-left: auto;
+  padding-right: auto;
 }
 
 /* #endregion footer*/
