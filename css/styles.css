@@ -349,8 +349,18 @@ button {
   align-items: center;
   justify-content: center;
 }
+.team-slink {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.team-icons-item:hover {
+.team-slink:hover,
+.team-slink:focus {
   background-color: #404bbf;
 }
 
