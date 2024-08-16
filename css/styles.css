@@ -504,7 +504,8 @@ button {
   justify-content: center;
 }
 
-.footer-icons-border:hover {
+.footer-icons-border:hover,
+.footer-icons-border:focus {
   background-color: #31d0aa;
 }
 
@@ -517,7 +518,7 @@ button {
   margin-bottom: 16px;
 }
 
-.footer-sotial-lincs-icons-block {
+.footer-sotial-lincs-icons-list {
   width: 208px;
   height: 40px;
   display: flex;
@@ -529,9 +530,15 @@ button {
   padding-right: auto;
 }
 
-.footer-sl-iconns-list {
+.footer-sl-iconns-list-item {
   width: 40px;
   height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
+.team-icons {
+}
 /* #endregion footer*/
