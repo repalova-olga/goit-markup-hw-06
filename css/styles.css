@@ -107,8 +107,8 @@ button {
   gap: 40px;
   padding: 24px 0;
 }
-.menu-item {
-}
+/* .menu-item {
+} */
 
 .menu-link {
   color: #404bbf;
@@ -185,8 +185,8 @@ button {
   background-size: cover;
 }
 
-.hero-container {
-}
+/* .hero-container {
+} */
 
 .hero-title {
   max-width: 496px;
@@ -313,8 +313,8 @@ button {
   padding: 32px 0;
 }
 
-.photo {
-}
+/* .photo {
+} */
 .name {
   color: #2e2f42;
   font-weight: 500;
@@ -415,8 +415,8 @@ button {
   overflow: hidden;
 }
 
-.portfolio-img {
-}
+/* .portfolio-img {
+} */
 
 .portfolio-img-cover-txt {
   position: absolute;
@@ -507,8 +507,8 @@ button {
   letter-spacing: 0.02em;
 }
 
-.footer-sotial-lincks-section {
-}
+/* .footer-sotial-lincks-section {
+} */
 
 /* .footer-icons-border {
   width: 40px;
