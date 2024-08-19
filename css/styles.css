@@ -575,9 +575,68 @@ button {
 .team-icon {
   fill: #f4f4fd;
 }
+.footer-form-container {
+}
+
+.footer-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-form-label {
+}
+
+.footer-input {
+  color: #ffffff;
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding-left: 16px;
+}
+
+.footer-input::placeholder {
+  color: #ffffff;
+}
+
+.footer-subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 165px;
+  height: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.footer-icon {
+  margin-left: 16px;
+}
 /* #endregion footer*/
 
-/* region backdrop*/
+/* #region backdrop*/
 .backdrop {
   position: fixed;
   top: 0;
@@ -613,7 +672,7 @@ button {
 }
 
 .backdrop.is-open {
-  visibility: visible;
+  /* visibility: visible; */
   opacity: 1;
   pointer-events: auto;
 }
