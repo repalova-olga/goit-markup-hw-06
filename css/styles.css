@@ -68,10 +68,13 @@ button {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .container {
-  width: 1158px;
+  /* width: 1158px; */
+  max-width: 320px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .header-container {
@@ -230,27 +233,39 @@ button {
 
 /* #region advanteges */
 .advantages {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .container {
-  width: 1158px;
+  /* max-width: 1158px; */
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
 }
 .advanteges-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* gap: 24px; */
+  gap: 72px;
+  align-items: center;
+  /* justify-content: flex-start; */
   justify-content: center;
 }
 .advanteges-list-item {
-  width: 280px;
+  /* width: 280px; */
 }
 
-.advanteges-item-border {
+/* .advanteges-item-border {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   width: 264px;
@@ -260,25 +275,31 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .advanteges-item-icon {
-  fill: #2e2f42;
+  /* fill: #2e2f42; */
 }
 
 .feature {
   color: #2e2f42;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 36px;
+  /* font-weight: 500;
+  font-size: 20px; */
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  text-align: center; /* mobile */
 }
 .feature-txt {
+  font-weight: 500; /* mobile */
   font-size: 16px;
-  line-height: 1.5;
+  /* line-height: 1.5; */
   letter-spacing: 0.02em;
   color: #434455;
+  line-height: 1.1;
+  color: #2e2f42;
 }
 /* #endregion advanteges */
 
@@ -664,7 +685,7 @@ button {
 }
 
 .backdrop.is-open {
-  visibility: visible;
+  /* visibility: visible; */
   opacity: 1;
   pointer-events: auto;
 }
@@ -857,3 +878,20 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*#endregion backdrop*/
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .advantages {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .advanteges-list {
+    flex-wrap: wrap;
+  }
+
+  .advanteges-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
