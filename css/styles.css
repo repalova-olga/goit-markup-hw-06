@@ -200,6 +200,9 @@ button {
   padding-top: 24px;
   padding-right: 24px;
   padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .mob-menu-close-btn {
   display: block;
@@ -238,6 +241,7 @@ button {
   margin-bottom: 48px;
 }
 .mob-address-list {
+  margin-bottom: 48px;
 }
 .mod-address-item {
 }
@@ -256,10 +260,11 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   gap: 40px;
-  padding-left: auto;
+  padding-left: 0px;
   padding-right: auto;
+  margin-bottom: 40px;
 }
 .mob-icons-item {
   width: 40px;
