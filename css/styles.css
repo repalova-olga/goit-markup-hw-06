@@ -62,14 +62,17 @@ button {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-/* #endregion header */
+/* #endregion base */
 
 /* #region header */
 
 .myheader {
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #e7e9fc;
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: center;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -86,14 +89,17 @@ button {
 
 .header-container {
   display: flex;
-
-  align-items: center;
+  justify-content: space-between;
 }
 
 .nav {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+
+  flex-direction: row;
+  /* flex-wrap: nowrap;
+  align-items: center; */
 }
 
 .logo {
@@ -104,7 +110,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
+  /* margin-right: 76px; */
 }
 
 .logo-span {
@@ -112,7 +118,7 @@ button {
 }
 
 .menu {
-  display: flex;
+  display: none; /*flex*/
   flex-wrap: nowrap;
   gap: 40px;
 }
@@ -153,6 +159,7 @@ button {
 }
 
 .address {
+  display: none;
   font-style: normal;
   margin-left: auto;
 }
@@ -176,6 +183,11 @@ button {
 .address-link:hover,
 .address-link:hover {
   color: #404bbf;
+}
+.menu-open-btn {
+  display: inline;
+  background-color: transparent;
+  border: none;
 }
 /* #endregion header */
 
