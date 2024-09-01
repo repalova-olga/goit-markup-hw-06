@@ -70,10 +70,10 @@ button {
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #e7e9fc;
-  display: flex;
+  /* display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -160,8 +160,6 @@ button {
 
 .address {
   display: none;
-  font-style: normal;
-  margin-left: auto;
 }
 
 .address-list {
@@ -203,6 +201,14 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.mob-menu.is-open {
+  /* visibility: visible; */
+  opacity: 1;
+  pointer-events: auto;
 }
 .mob-menu-close-btn {
   display: block;
@@ -1012,60 +1018,88 @@ button {
   .container {
     max-width: 768px;
   }
-  .container .hero-container {
-    padding-top: 112px;
+  .nav {
+    justify-content: center;
+  }
+  .logo {
+    justify-content: start;
+  }
+  .menu {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    gap: 40px;
+  }
+  address {
+    display: flex;
+    font-style: normal;
+    margin-left: auto;
+  }
+  .address-list {
+  }
+
+  /* flex-direction: column; */
+}
+.menu-open-btn {
+  display: none;
+}
+.mob-menu {
+  display: none;
+}
+.container .hero-container {
+  padding-top: 112px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/bg-tablet.jpg);
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 1dppx),
+  (min-resolution: 192dpi) {
+  .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/bg-tablet.jpg);
+      url(../images/bg-tablet-2x.jpg);
   }
-  @media screen and (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 1dppx),
-    (min-resolution: 192dpi) {
-    .hero {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/bg-tablet-2x.jpg);
-    }
-  }
-  .advantages {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
-  .advanteges-list {
-    flex-direction: row;
-    gap: 72px 24px;
-  }
+}
+.advantages {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.advanteges-list {
+  flex-direction: row;
+  gap: 72px 24px;
+}
 
-  .advanteges-list-item {
-    width: calc((100% - 24px) / 2);
-  }
+.advanteges-list-item {
+  width: calc((100% - 24px) / 2);
+}
 
-  .team-list {
-    gap: 64px 24px;
-  }
+.team-list {
+  gap: 64px 24px;
+}
 
-  .feature {
-    text-align: start;
-  }
+.feature {
+  text-align: start;
+}
 
-  .portfolio {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
-  .portfolio-list {
-    flex-wrap: wrap;
-    flex-direction: row;
-    row-gap: 72px;
-    column-gap: 24px;
-  }
-  .portfolio-list-item {
-    width: calc((100% - 36px - 24px) / 2);
-    height: auto;
-  }
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.portfolio-list {
+  flex-wrap: wrap;
+  flex-direction: row;
+  row-gap: 72px;
+  column-gap: 24px;
+}
+.portfolio-list-item {
+  width: calc((100% - 36px - 24px) / 2);
+  height: auto;
 }
 @media screen and (min-width: 1158px) {
   .container {
