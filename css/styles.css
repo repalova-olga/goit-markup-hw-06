@@ -206,6 +206,9 @@ button {
   margin-left: auto;
   background-color: transparent;
   border: solid 1px;
+  border-color: #e7e9fc;
+  border-radius: 100%;
+  margin-right: 24px;
   margin-bottom: 24px;
 }
 .mob-menu-btn-icon {
@@ -254,7 +257,7 @@ button {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 40px;
   padding-left: auto;
   padding-right: auto;
 }
