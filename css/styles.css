@@ -574,8 +574,9 @@ button {
   overflow: hidden;
 }
 
-/* .portfolio-img {
-} */
+.portfolio-img {
+  width: 360px;
+}
 
 .portfolio-img-cover-txt {
   position: absolute;
@@ -1136,11 +1137,27 @@ button {
     height: auto;
   }
    .footer-container {
+    width: 768px;
     flex-wrap: wrap;
     flex-direction: row;
+   ;
+    column-gap:  24px;
     padding-left: 15px;
   padding-right: 15px;
   }
+  .footer-sotial-lincks-section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .footer-logo-section {
+  margin-right: 0;
+}
+.footer-text {
+  text-align: left;
+}
+.footer-input {
+  width: 264px;
+}
   .modal {
     width: 408px;
     min-height: 584px;
@@ -1231,6 +1248,7 @@ button {
   }
 
   .footer-container {
+    width: 1158px;
     flex-wrap: nowrap;
     padding-left: 15px;
   padding-right: 15px;
